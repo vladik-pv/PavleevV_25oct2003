@@ -1,0 +1,24 @@
+SELECT DISTINCT product_name 
+FROM Products;
+
+SELECT p.product_id, p.product_name, p.price
+FROM Products p
+JOIN Nutritional_Information n ON p.product_id = n.product_id
+WHERE n.fiber > 2;
+
+SELECT p.product_name
+FROM Products p
+JOIN Nutritional_Information n ON p.product_id = n.product_id
+ORDER BY n.protein DESC
+LIMIT 1;
+
+SELECT p.category_id, SUM(p.calories) AS total_calories
+FROM Products p
+JOIN Nutritional_Information n ON p.product_id = n.product_id
+WHERE n.fat > 0
+GROUP BY p.category_id;
+
+SELECT c.category_name, ROUND(AVG(p.price), 2) AS average_price  -- Округлить до 2 знаков
+FROM Categories c
+JOIN Products p ON c.category_id = p.category_id
+GROUP BY c.category_id, c.category_name;
