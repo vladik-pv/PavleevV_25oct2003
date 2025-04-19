@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "b994ac4a-74ce-4c35-a145-bc1c6c040ae8",
+		"name": "altaivita",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37998384"
+	},
+	"item": [
+		{
+			"name": "Добавление товара в корзину",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=dj2km3m8h63mr42le2a5lnjhe7; CID=daa34656233dcf94f048016419c614ef; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; llk_hash_login_customerID=387509; dSesn=73e5a4dc-1813-e04b-ad7a-2903265d8ce6; _dvs=0:m9nwmbrb:p5GfTIpbm0GOd5GyB4PH~83hOIEqyooI; searchStartTime=1745048292358; digi_uc=|v:174504:2386:4598:7052; _ga_2JB65Y3D22=GS1.1.1745048293.1.0.1745048297.0.0.0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://altaivita.ru"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/product/altaiskiy-klyuch/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"YaBrowser\";v=\"25.2\", \"Yowser\";v=\"2.5\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "product_id=2386&this_listId=product_cart&parent_product=2386&LANG_key=ru&S_wh=1&S_CID=daa34656233dcf94f048016419c614ef&S_cur_code=rub&S_koef=1&quantity=1&S_hint_code=&S_customerID=387509",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php?login=89656342828",
+					"protocol": "https",
+					"host": [
+						"altaivita",
+						"ru"
+					],
+					"path": [
+						"engine",
+						"cart",
+						"add_products_to_cart_from_preview.php"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "89656342828"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://altaivita.ru/engine/ajax/ajax_ecommerce/ajax_ecommerce.php' \\\r\n  -H 'Accept: */*' \\\r\n  -H 'Accept-Language: ru,en;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -H 'Cookie: PHPSESSID=dj2km3m8h63mr42le2a5lnjhe7; CID=daa34656233dcf94f048016419c614ef; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; llk_hash_login_customerID=387509; dSesn=73e5a4dc-1813-e04b-ad7a-2903265d8ce6; _dvs=0:m9nwmbrb:p5GfTIpbm0GOd5GyB4PH~83hOIEqyooI; searchStartTime=1745048292358; digi_uc=|v:174504:2386:4598:7052; _ga_2JB65Y3D22=GS1.1.1745048293.1.0.1745048297.0.0.0' \\\r\n  -H 'Origin: https://altaivita.ru' \\\r\n  -H 'Referer: https://altaivita.ru/product/altaiskiy-klyuch/' \\\r\n  -H 'Sec-Fetch-Dest: empty' \\\r\n  -H 'Sec-Fetch-Mode: cors' \\\r\n  -H 'Sec-Fetch-Site: same-origin' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  -H 'sec-ch-ua: \"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"YaBrowser\";v=\"25.2\", \"Yowser\";v=\"2.5\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  --data-raw 'action=ecom_link_products_cart&productID=2386&LANG_key=ru&S_wh=1&S_CID=daa34656233dcf94f048016419c614ef&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID='"
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление кол-во товара",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=dj2km3m8h63mr42le2a5lnjhe7; CID=daa34656233dcf94f048016419c614ef; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; llk_hash_login_customerID=387509; dSesn=73e5a4dc-1813-e04b-ad7a-2903265d8ce6; _dvs=0:m9nwmbrb:p5GfTIpbm0GOd5GyB4PH~83hOIEqyooI; searchStartTime=1745048292358; digi_uc=|v:174504:2386:4598:7052"
+					},
+					{
+						"key": "Origin",
+						"value": "https://altaivita.ru"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/product/altaiskiy-klyuch/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"YaBrowser\";v=\"25.2\", \"Yowser\";v=\"2.5\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "product_id=2386&this_listId=product_cart&parent_product=2386&LANG_key=ru&S_wh=1&S_CID=daa34656233dcf94f048016419c614ef&S_cur_code=rub&S_koef=1&quantity=1&S_hint_code=&S_customerID=387509",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php?login=89656342828",
+					"protocol": "https",
+					"host": [
+						"altaivita",
+						"ru"
+					],
+					"path": [
+						"engine",
+						"cart",
+						"add_products_to_cart_from_preview.php"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "89656342828"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php' \\\r\n  -H 'Accept: */*' \\\r\n  -H 'Accept-Language: ru,en;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -H 'Cookie: PHPSESSID=dj2km3m8h63mr42le2a5lnjhe7; CID=daa34656233dcf94f048016419c614ef; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; llk_hash_login_customerID=387509; dSesn=73e5a4dc-1813-e04b-ad7a-2903265d8ce6; _dvs=0:m9nwmbrb:p5GfTIpbm0GOd5GyB4PH~83hOIEqyooI; searchStartTime=1745048292358; digi_uc=|v:174504:2386:4598:7052' \\\r\n  -H 'Origin: https://altaivita.ru' \\\r\n  -H 'Referer: https://altaivita.ru/product/altaiskiy-klyuch/' \\\r\n  -H 'Sec-Fetch-Dest: empty' \\\r\n  -H 'Sec-Fetch-Mode: cors' \\\r\n  -H 'Sec-Fetch-Site: same-origin' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  -H 'sec-ch-ua: \"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"YaBrowser\";v=\"25.2\", \"Yowser\";v=\"2.5\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  --data-raw 'product_id=2386&this_listId=product_cart&parent_product=2386&LANG_key=ru&S_wh=1&S_CID=daa34656233dcf94f048016419c614ef&S_cur_code=rub&S_koef=1&quantity=1&S_hint_code=&S_customerID='"
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление корзины",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=dj2km3m8h63mr42le2a5lnjhe7; CID=daa34656233dcf94f048016419c614ef; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; llk_hash_login_customerID=387509; dSesn=73e5a4dc-1813-e04b-ad7a-2903265d8ce6; _dvs=0:m9nwmbrb:p5GfTIpbm0GOd5GyB4PH~83hOIEqyooI; searchStartTime=1745048292358; digi_uc=|v:174504:2386:4598:7052"
+					},
+					{
+						"key": "Origin",
+						"value": "https://altaivita.ru"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/product/altaiskiy-klyuch/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"YaBrowser\";v=\"25.2\", \"Yowser\";v=\"2.5\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "product_id=2386&LANG_key=ru&S_wh=1&S_CID=daa34656233dcf94f048016419c614ef&S_cur_code=rub&S_koef=2&S_hint_code=&S_customerID=",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altaivita.ru/engine/cart/delete_products_from_cart_preview.php?login=89656342828",
+					"protocol": "https",
+					"host": [
+						"altaivita",
+						"ru"
+					],
+					"path": [
+						"engine",
+						"cart",
+						"delete_products_from_cart_preview.php"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "89656342828"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://altaivita.ru/engine/cart/delete_products_from_cart_preview.php' \\\r\n  -H 'Accept: */*' \\\r\n  -H 'Accept-Language: ru,en;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -H 'Cookie: PHPSESSID=dj2km3m8h63mr42le2a5lnjhe7; CID=daa34656233dcf94f048016419c614ef; site_countryID=247; site_country_name=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; _userGUID=0:m9nsunk9:jm864nqsHksMpj2Mm9Zb2aDt8HGYj3UR; llk_hash_login_customerID=387509; dSesn=73e5a4dc-1813-e04b-ad7a-2903265d8ce6; _dvs=0:m9nwmbrb:p5GfTIpbm0GOd5GyB4PH~83hOIEqyooI; searchStartTime=1745048292358; digi_uc=|v:174504:2386:4598:7052' \\\r\n  -H 'Origin: https://altaivita.ru' \\\r\n  -H 'Referer: https://altaivita.ru/product/altaiskiy-klyuch/' \\\r\n  -H 'Sec-Fetch-Dest: empty' \\\r\n  -H 'Sec-Fetch-Mode: cors' \\\r\n  -H 'Sec-Fetch-Site: same-origin' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  -H 'sec-ch-ua: \"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"YaBrowser\";v=\"25.2\", \"Yowser\";v=\"2.5\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  --data-raw 'product_id=2386&LANG_key=ru&S_wh=1&S_CID=daa34656233dcf94f048016419c614ef&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID='"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
